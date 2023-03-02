@@ -1,6 +1,11 @@
-export default function Buttons({name }:any){
-    let bgc = "red-500"
-    return(
-        <button className={`bg-${bgc} text-red-500`}>{name}</button>
+"use client"
+// grid
+import { motion } from "framer-motion"
+
+export default function Buttons({ children }: any) {
+    return (
+        <motion.div whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }}>
+            <button>{children}</button>
+        </motion.div>
     )
 }

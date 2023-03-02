@@ -1,11 +1,30 @@
-
-
-
+interface NavbarItemType {
+    label:string,
+    href:string,
+}
 interface biometricType {
     name: string,
     students: string,
     instructor: string
 }
+export const NavbarItems : Array<NavbarItemType>=[
+    {
+        label:"Home",
+        href:"/"
+    },
+    {
+        label:"Blogs",
+        href:"/"
+    },
+    {
+        label:"Cotact",
+        href:"/"
+    },
+    {
+        label:"About",
+        href:"/"
+    }
+]
 
 export const Biometric: Array<biometricType> = [
     {

@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@layer base {
+    h1{
+        @apply text-gray-800 text-4xl font-bold py-3
+    }
+    h2{
+        @apply text-gray-800 text-3xl font-semibold py-1
+    }
+    button {
+        @apply cursor-pointer px-6 py-2 rounded-lg text-white bg-gradient-to-r from-violet-500 to-violet-400 hover:bg-gradient-to-r hover:from-violet-600 hover:to-violet-500 active:bg-violet-700
+    }
+}
+
+
+
+
+
+/* .quote {
+    @apply m-3 p-6 bg-blue-400 rounded-lg
+}
+.quote p{
+    @apply font-serif italic text-gray-800 leading-snug
+}
+a.activee{
+    @apply bg-blue-500 text-white text-lg font-bold
+} */
